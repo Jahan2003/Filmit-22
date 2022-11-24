@@ -1,18 +1,19 @@
 import React from "react"
 import Navbar from "../components/nav"
+import Review from "../components/review"
+import SSide from "../components/sside"
 const Nwh=()=>{
     return( 
       <>
       <Navbar/>
+      <SSide/>
       <div class="ma">
   <div class="bc">
   <h2 class="head-title">Spider-Man: No Way Home</h2>
   <span id="cer">PG-13</span>
    </div>
   
-   <video width="900" height="450" controls autoplay muted>
-      <source src="../website/Black Adam – Official Trailer 1.mp4" type="video/mp4"></source>
-    </video> 
+   <iframe width="1000" height="500" src="https://www.youtube.com/embed/JfVOs4VSpmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="syno">
       <div class="syn">
           <div class="head">
@@ -27,19 +28,19 @@ const Nwh=()=>{
           <div class="tit">Top Cast</div>
           <div class="wrap">
               <div class="im">
-                  <img src="dwn.jfif" alt="" ></img>
+                  <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843976/black%20adam/no%20way%20home/tom_bvtzqm_m4jzdt.jpg" alt="" ></img>
                   <h4>Tom Holland</h4>
             </div>
             <div class="im">
-              <img src="superman.jfif" alt="" ></img>
+              <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843976/black%20adam/no%20way%20home/zen_sbv5y3_p8ovsr.jpg" alt="" ></img>
               <h4>Zendaya</h4>
         </div>
         <div class="im">
-          <img src="noah.jfif" alt="" ></img>
+          <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843976/black%20adam/no%20way%20home/ben_eektkx_sfsfuw.jpg" alt="" ></img>
           <h4>Benedict Cumberbatch</h4>
       </div>
       <div class="im">
-        <img src="sara.jfif" alt="" ></img>
+        <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843976/black%20adam/no%20way%20home/wi_hbnawf_bur0fu.jpg" alt="" ></img>
         <h4>Willem Dafoe</h4>
     </div>
     </div>
@@ -75,23 +76,7 @@ const Nwh=()=>{
       </div>
       
       
-      <div class="headi">
-          <div class="h">
-              Your Review:
-          </div>
-              <div id="headline">
-                  <textarea id="text1" placeholder="Write a headline of your review" rows="1" required></textarea>
-              </div>
-              <div id="conte">
-                  <textarea id="text2" placeholder="Write your review (Minimum 100 characters)" rows="5" required minlength="1"></textarea>
-              
-          </div>
-          
-      </div>
-          <center>
-  
-              <button onclick="review()">Submit</button>
-          </center>
+      <Review/>
           </div>
       
       

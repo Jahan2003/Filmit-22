@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "../components/nav"
+import Review from "../components/review";
+import SSide from "../components/sside";
 const Off=()=>{
     return (
 <>
       <Navbar/>
+      <SSide/>
       <div class="ma">
   <div class="bc">
   <h2 class="head-title">The Office(2005–2013)</h2>
   <span id="cer">TV-14</span>
    </div>
   
-   <video width="900" height="450" controls autoplay muted>
-      <source src="../website/Black Adam – Official Trailer 1.mp4" type="video/mp4"></source>
-    </video> 
+   <iframe width="1000" height="500" src="https://www.youtube.com/embed/LHOtME2DL4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="syno">
       <div class="syn">
           <div class="head">
@@ -27,19 +28,19 @@ const Off=()=>{
           <div class="tit">Top Cast</div>
           <div class="wrap">
               <div class="im">
-                  <img src="dwn.jfif" alt="" ></img>
+                  <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844006/black%20adam/office/ste_vadpuh_qishct.jpg" alt="" ></img>
                   <h4>Steve Carell</h4>
             </div>
             <div class="im">
-              <img src="superman.jfif" alt="" ></img>
+              <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844006/black%20adam/office/jen_p8ipue_weuxwq.jpg" alt="" ></img>
               <h4>Jenna Fischer</h4>
         </div>
         <div class="im">
-          <img src="noah.jfif" alt="" ></img>
+          <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844006/black%20adam/office/joh_rurnbc_k1o5ze.jpg" alt="" ></img>
           <h4>John Krasinski</h4>
       </div>
       <div class="im">
-        <img src="sara.jfif" alt="" ></img>
+        <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844006/black%20adam/office/rain_n8lx9g_dfsmcd.jpg" alt="" ></img>
         <h4>Rainn Wilson</h4>
     </div>
     </div>
@@ -74,23 +75,7 @@ const Off=()=>{
       </div>
       
       
-      <div class="headi">
-          <div class="h">
-              Your Review:
-          </div>
-              <div id="headline">
-                  <textarea id="text1" placeholder="Write a headline of your review" rows="1" required></textarea>
-              </div>
-              <div id="conte">
-                  <textarea id="text2" placeholder="Write your review (Minimum 100 characters)" rows="5" required minlength="1"></textarea>
-              
-          </div>
-          
-      </div>
-          <center>
-  
-              <button onclick="review()">Submit</button>
-          </center>
+      <Review/>
           </div>
       
       

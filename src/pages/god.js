@@ -1,18 +1,19 @@
 import React from "react"
 import Navbar from "../components/nav"
+import SSide from "../components/sside"
+import Review from "../components/review"
 const God=()=>{
     return(
       <>
       <Navbar/>
+      <SSide/>
       <div class="ma">
   <div class="bc">
       <h2 class="head-title">The Godfather(1972)</h2>
       <span id="cer">R-rated</span>
    </div>
   
-   <video width="900" height="450" controls autoplay muted>
-      <source src="../website/Black Adam – Official Trailer 1.mp4" type="video/mp4"></source>
-    </video> 
+   <iframe width="1000" height="500" src="https://www.youtube.com/embed/UaVTIH8mujA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="syno">
       <div class="syn">
           <div class="head">
@@ -27,19 +28,19 @@ const God=()=>{
           <div class="tit">Top Cast</div>
           <div class="wrap">
               <div class="im">
-                  <img src="dwn.jfif" alt="" ></img>
+                  <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844012/black%20adam/godfather/bra_d3uvsu_fqftws.jpg" alt="" ></img>
                   <h4>Marlon Brando</h4>
             </div>
             <div class="im">
-              <img src="superman.jfif" alt="" ></img>
+              <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844012/black%20adam/godfather/jam_mlm8ee_nno9k2.jpg" alt="" ></img>
               <h4>James Caan</h4>
         </div>
         <div class="im">
-          <img src="noah.jfif" alt="" ></img>
+          <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844012/black%20adam/godfather/du_f8logi_ejbd20.jpg" alt="" ></img>
           <h4>Robert Duvall</h4>
       </div>
       <div class="im">
-        <img src="sara.jfif" alt="" ></img>
+        <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668844012/black%20adam/godfather/al_gt2vu2_fqzqs1.jpg" alt="" ></img>
         <h4>Al Pacino</h4>
     </div>
     </div>
@@ -75,23 +76,7 @@ const God=()=>{
       </div>
       
       
-      <div class="headi">
-          <div class="h">
-              Your Review:
-          </div>
-              <div id="headline">
-                  <textarea id="text1" placeholder="Write a headline of your review" rows="1" required></textarea>
-              </div>
-              <div id="conte">
-                  <textarea id="text2" placeholder="Write your review (Minimum 100 characters)" rows="5" required minlength="1"></textarea>
-              
-          </div>
-          
-      </div>
-          <center>
-  
-              <button onclick="review()">Submit</button>
-          </center>
+   <Review/>
           </div>
       
       

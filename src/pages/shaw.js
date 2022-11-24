@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "../components/nav"
+import Review from "../components/review";
+import SSide from "../components/sside";
 const Shaw=()=>{
     return (
       <>
       <Navbar/>
+      <SSide/>
       <div class="ma">
   <div class="bc">
   <h2 class="head-title">The Shawshank Redemption(1994)</h2>
   <span id="cer">R-rated</span>
    </div>
   
-   <video width="900" height="450" controls autoplay muted>
-      <source src="../website/Black Adam – Official Trailer 1.mp4" type="video/mp4"></source>
-    </video> 
+   <iframe width="1000" height="500" src="https://www.youtube.com/embed/P9mwtI82k6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="syno">
       <div class="syn">
           <div class="head">
@@ -27,19 +28,19 @@ const Shaw=()=>{
           <div class="tit">Top Cast</div>
           <div class="wrap">
               <div class="im">
-                  <img src="dwn.jfif" alt="" ></img>
+                  <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843949/black%20adam/shawshank/rob_ugxjk1_ne0vjq.jpg" alt="" ></img>
                   <h4>Tim Robbins</h4>
             </div>
             <div class="im">
-              <img src="superman.jfif" alt="" ></img>
+              <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843949/black%20adam/shawshank/mor_mtmtq3_qidxkv.jpg" alt="" ></img>
               <h4>Morgan Freeman</h4>
         </div>
         <div class="im">
-          <img src="noah.jfif" alt="" ></img>
+          <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843949/black%20adam/shawshank/bob_owqrd7_ccdkyp.jpg" alt="" ></img>
           <h4>Bob Gunton</h4>
       </div>
       <div class="im">
-        <img src="sara.jfif" alt="" ></img>
+        <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843949/black%20adam/shawshank/will_lkrrj8_m9dovs.jpg" alt="" ></img>
         <h4>William Sadler</h4>
     </div>
     </div>
@@ -72,23 +73,7 @@ And it deserves this praise that seems to be growing each year. Now twenty years
       </div>
       
       
-      <div class="headi">
-          <div class="h">
-              Your Review:
-          </div>
-              <div id="headline">
-                  <textarea id="text1" placeholder="Write a headline of your review" rows="1" required></textarea>
-              </div>
-              <div id="conte">
-                  <textarea id="text2" placeholder="Write your review (Minimum 100 characters)" rows="5" required minlength="1"></textarea>
-              
-          </div>
-          
-      </div>
-          <center>
-  
-              <button onclick="review()">Submit</button>
-          </center>
+     <Review/>
           </div>
       
       

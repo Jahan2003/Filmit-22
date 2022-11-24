@@ -1,12 +1,15 @@
 
 import { Link } from "react-router-dom";
 import Navbar from "./nav";
+import SSide from "./sside1";
 import Slider from "./slider";
 const Movies = () =>{
     return( 
-        <>
+        <div className="moviep">
         <Navbar/>
-        <Slider/>
+        <SSide/>
+        <section id="trending">
+        <Slider/></section>
     <section class="popular container" id="popular">
 
     <div class="heading">
@@ -125,8 +128,9 @@ const Movies = () =>{
            
 
        </div>
-
-       <div class="heading" id="srs">
+</section>
+<section id="srs" class="popular container">
+       <div class="heading">
         <h2 class="heading-tit1e">Series and Tv Shows</h2>
     </div>
     <div class="swipe">
@@ -243,7 +247,7 @@ const Movies = () =>{
 
     
 </section>
-</>
+</div>
 )
 }
 export default Movies;

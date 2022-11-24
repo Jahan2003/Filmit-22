@@ -1,24 +1,19 @@
 import React from "react"
 import Navbar from "../components/nav"
-import { useState } from "react";
+import Review from "../components/review"
+import SSide from "../components/sside"
 const Mat=()=>{
-    
-        function review(){
-         
-          
- }
     return(
       <>
       <Navbar/>
+      <SSide/>
       <div class="ma">
   <div class="bc">
   <h2 class="head-title">The Matrix(1999)</h2>
   <span id="cer">R-Rated</span>
    </div>
   
-   <video width="900" height="450" controls autoplay muted>
-      <source src="../website/Black Adam – Official Trailer 1.mp4" type="video/mp4"></source>
-    </video> 
+   <iframe width="1000" height="500" src="https://www.youtube.com/embed/nUEQNVV3Gfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="syno">
       <div class="syn">
           <div class="head">
@@ -33,19 +28,19 @@ const Mat=()=>{
           <div class="tit">Top Cast</div>
           <div class="wrap">
               <div class="im">
-                  <img src="dwn.jfif" alt="" ></img>
+                  <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843993/black%20adam/matrix/kea_aaap8g_phviyz.jpg" alt="" ></img>
                   <h4>Keanu Reeves</h4>
             </div>
             <div class="im">
-              <img src="superman.jfif" alt="" ></img>
+              <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843993/black%20adam/matrix/lau_y8jbfp_vfyt2d.jpg" alt="" ></img>
               <h4>Laurence Fishburne</h4>
         </div>
         <div class="im">
-          <img src="noah.jfif" alt="" ></img>
+          <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843993/black%20adam/matrix/car_jtmhrr_zvq4if.jpg" alt="" ></img>
           <h4>Carrie-Anne Moss</h4>
       </div>
       <div class="im">
-        <img src="sara.jfif" alt="" ></img>
+        <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843993/black%20adam/matrix/hug_p6ipnu_zcgcgd.jpg" alt="" ></img>
         <h4>Hugo Weaving</h4>
     </div>
     </div>
@@ -81,23 +76,7 @@ const Mat=()=>{
       </div>
       
       
-      <div class="headi">
-          <div class="h">
-              Your Review:
-          </div>
-              <div id="headline">
-                  <textarea id="text1" placeholder="Write a headline of your review" rows="1" required></textarea>
-              </div>
-              <div id="conte">
-                  <textarea id="text2" placeholder="Write your review (Minimum 100 characters)" rows="5" required minlength="1"></textarea>
-              
-          </div>
-          
-      </div>
-          <center>
-  
-              <button onClick={review}>Submit</button>
-          </center>
+     <Review/>
           </div>
       
       

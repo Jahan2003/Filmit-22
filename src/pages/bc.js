@@ -1,17 +1,22 @@
    import Navbar from "../components/nav"
+   import Review from "../components/review";
+   import SSide from "../components/sside";
    const Bc=()=>{
-    return(
+   return(
         <>
         <Navbar/>
+        <SSide/>
+
 <div class="ma">
     <div class="bc">
         <h2 class="head-title">Black Adam (2022)</h2>
         <span id="cer">PG-13</span>
      </div>
     
-     <video width="900" height="450" controls autoplay muted>
-        <source src="../website/Black Adam – Official Trailer 1.mp4" type="video/mp4"></source>
-      </video> 
+     {/* <video width="900" height="450" controls autoplay muted>
+        <source src="./" type="video/mp4"></source>
+      </video>  */}
+      <iframe width="1000" height="500" src="https://www.youtube.com/embed/mkomfZHG5q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
       <div class="syno">
         <div class="syn">
             <div class="head">
@@ -28,19 +33,19 @@
             <div class="tit">Top Cast</div>
             <div class="wrap">
                 <div class="im">
-                    <img src="dwn.jfif" alt="" ></img>
+                    <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843924/black%20adam/black%20adam/dwn_zrxdpt_eqvtqg.jpg" alt="" ></img>
                     <h4>Dwayne Johnson</h4>
               </div>
               <div class="im">
-                <img src="superman.jfif" alt="" ></img>
+                <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843924/black%20adam/black%20adam/superman_e3fgcp_uxojip.jpg" alt="" ></img>
                 <h4>Henry Cavil</h4>
           </div>
           <div class="im">
-            <img src="noah.jfif" alt="" ></img>
+            <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843924/black%20adam/black%20adam/noah_iygakc_ymfzrn.jpg" alt="" ></img>
             <h4>Noah Centineo</h4>
         </div>
         <div class="im">
-          <img src="sara.jfif" alt="" ></img>
+          <img src="https://res.cloudinary.com/digpxlioq/image/upload/v1668843924/black%20adam/black%20adam/sara_ghkmo3_tfysab.jpg" alt="" ></img>
           <h4>Sarah Shahi</h4>
       </div>
       </div>
@@ -76,25 +81,9 @@
            
             
         </div>
+             <Review/>
         
-        
-        <div class="headi">
-            <div class="h">
-                Your Review:
-            </div>
-                <div id="headline">
-                    <textarea id="text1" placeholder="Write a headline of your review" rows="1" required></textarea>
-                </div>
-                <div id="conte">
-                    <textarea id="text2" placeholder="Write your review (Minimum 100 characters)" rows="5" required minlength="1"></textarea>
-                
-            </div>
-            
-        </div>
-            <center>
-    
-                <button onclick="review()">Submit</button>
-            </center>
+
             </div>
         
         
